@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+torch
+onnx
+onnxruntime
+fastapi
+uvicorn
+joblib
+streamlit
+requests
+plotly
+reportlab
+xgboost
+matplotlib
+seaborn

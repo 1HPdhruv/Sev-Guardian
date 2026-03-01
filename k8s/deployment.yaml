@@ -1,0 +1,20 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sev-guardian
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sev-guardian
+  template:
+    metadata:
+      labels:
+        app: sev-guardian
+    spec:
+      containers:
+      - name: sev-guardian
+        image: sev-guardian:latest
+        ports:
+        - containerPort: 8000

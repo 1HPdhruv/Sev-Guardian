@@ -1,0 +1,19 @@
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from src.infer_onnx import predict
+
+app = FastAPI(title="SEV Guardian FINAL BOSS API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.post("/score")
+def score(data: dict):
+    score = predict(data.get("features"))
+    return {"threat_score": score, "alert": score > 0.5}
