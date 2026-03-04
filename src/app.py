@@ -17,3 +17,7 @@ app.add_middleware(
 def score(data: dict):
     score = predict(data.get("features"))
     return {"threat_score": score, "alert": score > 0.5}
+
+@app.get("/")
+def home():
+    return {"message": "SEV Guardian API is running"}
