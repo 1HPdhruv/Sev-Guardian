@@ -34,9 +34,9 @@ The SEV Guardian backend API is deployed on Render.
 
 Base URL:
 ```bash
-https://sev-guardian.onrender.com
+https://sev-guardian1.onrender.com
 ```
 You can explore the API documentation here:
 ```bash
-https://sev-guardian.onrender.com/docs
+https://sev-guardian1.onrender.com/docs
 ```
