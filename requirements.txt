@@ -1,6 +1,15 @@
 fastapi
 uvicorn
+torch==2.2.2
+xgboost
+scikit-learn
+onnx
 onnxruntime
 numpy
+pandas
 joblib
+matplotlib
+seaborn
+plotly
+streamlit
 requests
