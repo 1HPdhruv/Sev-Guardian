@@ -6,7 +6,7 @@ import os
 import onnxruntime as ort
 import time
 
-API_URL = "http://127.0.0.1:8000/score"
+API_URL = "https://sev-guardian1.onrender.com/score"
 
 st.set_page_config(
     page_title="SEV Guardian SOC",
