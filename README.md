@@ -27,3 +27,16 @@ Traffic → Preprocessing → Ensemble Model → ONNX → ROCm/CPU → FastAPI �
 pip install -r requirements.txt
 python -m uvicorn src.app:app --reload
 python -m streamlit run dashboard/streamlit_app.py
+```
+## Live Deployment
+
+The SEV Guardian backend API is deployed on Render.
+
+Base URL:
+```bash
+https://sev-guardian.onrender.com
+```
+You can explore the API documentation here:
+```bash
+https://sev-guardian.onrender.com/docs
+```
